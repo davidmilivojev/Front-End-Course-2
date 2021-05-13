@@ -1,2 +1,40 @@
 @import 'reset.css';
 
+.wrap {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.container {
+    border: 5px solid red;
+    font-size: 0;
+}
+.holder {
+    margin: 0 -20px;
+}
+.card1 {
+    width: calc(33.33% - 40px);
+    border: 1px solid #000;
+    background-color: aquamarine;
+    min-height: 300px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    margin: 0 20px;
+}
+
+.card {
+    width: 33.33%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 20px;
+}
+
+.card-inner {
+    border: 1px solid #000;
+    background-color: aquamarine;
+    min-height: 300px;
+    font-size: 16px;
+}
