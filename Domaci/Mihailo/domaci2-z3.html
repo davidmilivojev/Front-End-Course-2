@@ -1,0 +1,98 @@
+<html>
+  <head>
+    <style>
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed,
+    figure, figcaption, footer, header, hgroup,
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section {
+      display: block;
+    }
+    body {
+      line-height: 1;
+      font-family: 'Raleway', sans-serif;
+    }
+    button,
+    input,
+    textarea {
+      font-family: 'Raleway', sans-serif;
+    }
+    ol, ul {
+      list-style: none;
+    }
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    body {
+      font-size: 0; /* inline-block whitespace issue */
+    }
+
+    div {
+      border: 1px solid black;
+      font-size: 1rem;
+      height: 100%;
+      margin: 0;
+    }
+
+    .wrap {
+      font-size: 0px;
+    }
+
+    d1, d2, d3 {
+        float: left;
+        max-width: 33.333333%;
+    }
+
+    .d1 {
+      background-color: cornflowerblue;
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    .d2 {
+      display: inline-block;
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+
+    .d3 {
+      background-color: tomato;
+      display: inline-block;
+      margin-left: 20px;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+        <div class="d1">card1</div>
+        <div class="d2">card2</div>
+        <div class="d3">card3</div>
+    </div>
+  </body>
+</html>
