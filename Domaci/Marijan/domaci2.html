@@ -1,0 +1,81 @@
+<html>
+  <head>
+    <title>
+      Domaci 2
+    </title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .wrap {
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+        max-width: 1200px;
+      }
+      .flex-card {
+        height: 300px;
+        width: 300px;
+        border: 5px solid red;
+        background-color: blue;
+        font-size: 16px;
+        font-weight: 700;
+      }
+      .flex {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+      }
+      .inline-block {
+        font-size: 0;
+        margin-bottom: 50px;
+      }
+      .inline-block-card {
+        display: inline-block;
+        vertical-align: top;
+        height: 300px;
+        width: 300px;
+        border: 5px solid red;
+        background-color: blue;
+        font-size: 16px;
+        font-weight: 700;
+      }
+      .margin {
+        margin: 0 calc((100% - 900px)/2);
+      }
+      .float {
+        clear: both;
+      }
+      .float-card {
+        height: 300px;
+        width: 300px;
+        border: 5px solid red;
+        background-color: blue;
+        font-size: 16px;
+        font-weight: 700;
+      }
+      .float-left {
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="flex">
+        <div class="flex-card">card1</div>
+        <div class="flex-card">card2</div>
+        <div class="flex-card">card3</div>
+      </div>
+      <div class="inline-block">
+        <div class="inline-block-card">card1</div>
+        <div class="inline-block-card margin">card2</div>
+        <div class="inline-block-card">card3</div>
+      </div>
+      <div class="float">
+        <div class="float-card float-left">card1</div>
+        <div class="float-card float-left margin">card2</div>
+        <div class="float-card float-left">card3</div>
+      </div>
+    </div>
+  </body>
+</html>
