@@ -38,18 +38,6 @@
     ol, ul {
       list-style: none;
     }
-    blockquote, q {
-      quotes: none;
-    }
-    blockquote:before, blockquote:after,
-    q:before, q:after {
-      content: '';
-      content: none;
-    }
-    table {
-      border-collapse: collapse;
-      border-spacing: 0;
-    }
     *,
     *::before,
     *::after {
@@ -70,27 +58,33 @@
       font-size: 1rem;
       display: inline-block;
       height: 100%;
-      width: calc(100% / 3);
       margin: 0;
-      padding: 0;
+    }
+
+    .wrap {
+      font-size: 0px;
     }
 
     .d1 {
-      border: 1px solid black;
       background-color: cornflowerblue;
-      float: left;
+      display: inline-block;
+      margin-right: 20px;
+      vertical-align: top;
     }
 
     .d2 {
-      border: 1px solid black;
-      float: left;
+      display: inline-block;
+      margin-right: 20px;
+      margin-left: 20px;
+      vertical-align: top;
     }
 
     .d3 {
-      border: 1px solid black;
       background-color: tomato;
-      float: left;
-    }
+      display: inline-block;
+      margin-left: 20px;
+      vertical-align: top;
+    } */
     </style>
   </head>
   <body>
