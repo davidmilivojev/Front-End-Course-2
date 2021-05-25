@@ -1,0 +1,110 @@
+<html>
+  <head>
+    <style>
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed,
+    figure, figcaption, footer, header, hgroup,
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section {
+      display: block;
+    }
+    body {
+      line-height: 1;
+      font-family: 'Raleway', sans-serif;
+    }
+    button,
+    input,
+    textarea {
+      font-family: 'Raleway', sans-serif;
+    }
+    ol, ul {
+      list-style: none;
+    }
+    blockquote, q {
+      quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+      content: '';
+      content: none;
+    }
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    body {
+      font-size: 0; /* inline-block whitespace issue */
+    }
+
+    .wrap {
+        display: flex;
+    }
+
+    div {
+      border: 1px solid black;
+      font-size: 1rem;
+      display: inline-block;
+      height: 100%;
+      width: calc(100% / 3);
+      margin: 0;
+      padding: 0;
+    }
+
+    .d {
+        flex-grow: 1;
+    }
+
+    /* .d + .d {
+        margin-left: 2%;
+    } */
+
+    .d1 {
+      background-color: cornflowerblue;
+    }
+
+    .d2 {
+      border: 1px solid black;
+    }
+
+    .d3 {
+      background-color: tomato;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+        <div class="d d1">card1</div>
+        <div class="d d2">card2</div>
+        <div class="d d3">card3</div>
+    </div>
+  </body>
+</html>
