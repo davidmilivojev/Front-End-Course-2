@@ -15,7 +15,9 @@
       }
       .flex-card {
         height: 300px;
-        width: 300px;
+        max-width: 300px;
+        min-width: 300px;
+        display: flex;
         border: 5px solid red;
         background-color: blue;
         font-size: 16px;
@@ -43,9 +45,6 @@
       .margin {
         margin: 0 calc((100% - 900px)/2);
       }
-      .float {
-        clear: both;
-      }
       .float-card {
         height: 300px;
         width: 300px;
@@ -56,6 +55,15 @@
       }
       .float-left {
         float: left;
+      }
+      .clearfix::before,
+      .clearfix::after {
+        content: '';
+        display: table;
+      }
+
+      .clearfix::after {
+        clear: both;
       }
     </style>
   </head>
@@ -71,7 +79,7 @@
         <div class="inline-block-card margin">card2</div>
         <div class="inline-block-card">card3</div>
       </div>
-      <div class="float">
+      <div class="clearfix">
         <div class="float-card float-left">card1</div>
         <div class="float-card float-left margin">card2</div>
         <div class="float-card float-left">card3</div>
