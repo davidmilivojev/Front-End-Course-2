@@ -1,2 +1,29 @@
 @import 'reset.css';
 
+.wrap {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+header {
+    width: 100%;
+    background-color: lightseagreen;
+    height: 100px;
+    border: 1px solid #000;
+}
+
+main {
+    width: 100%;
+    background-color: lightslategray;
+    height: 600px;
+    border: 1px solid #000;
+}
+
+footer {
+    width: 100%;
+    background-color: coral;
+    height: 100px;
+    border: 1px solid #000;
+}
