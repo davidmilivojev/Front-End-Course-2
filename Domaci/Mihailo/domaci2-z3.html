@@ -44,13 +44,9 @@
         box-sizing: border-box;
     }
     body, html {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-    }
-
-    body {
-      font-size: 0; /* inline-block whitespace issue */
+      margin: 0;
+      padding: 0;
+      height: 100%;
     }
 
     div {
@@ -60,39 +56,48 @@
       margin: 0;
     }
 
-    .wrap {
-      font-size: 0px;
+    .wrap::before,
+    .wrap::after {
+      content: '';
+      display: table;
     }
 
-    d1, d2, d3 {
-        float: left;
-        max-width: 33.333333%;
+    .wrap::after {
+      clear: both;
+    }
+
+    .d {
+      height: 300px;
+      width: 300px;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .d-left {
+      float: left;
     }
 
     .d1 {
       background-color: cornflowerblue;
-      display: inline-block;
       margin-right: 20px;
     }
 
     .d2 {
-      display: inline-block;
       margin-right: 20px;
       margin-left: 20px;
     }
 
     .d3 {
       background-color: tomato;
-      display: inline-block;
       margin-left: 20px;
     }
     </style>
   </head>
   <body>
     <div class="wrap">
-        <div class="d1">card1</div>
-        <div class="d2">card2</div>
-        <div class="d3">card3</div>
+      <div class="d d-left d1">card1</div>
+      <div class="d d-left d2">card2</div>
+      <div class="d d-left d3">card3</div>
     </div>
   </body>
 </html>
