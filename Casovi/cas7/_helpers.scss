@@ -1,0 +1,72 @@
+.wrap {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.container {
+    width: 50%;
+}
+
+%bg-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+%clearfix {
+    &::before,
+    &::after {
+        content: '';
+        display: block;
+    }
+    &::after {
+        clear: both;
+    }
+}
+
+// @mixin img {
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+// }
+
+@mixin circle($value) {
+    width: $value;
+    height: $value;
+    border-radius: 50%;
+    @content;
+}
+
+
+// mixin + operatori
+@mixin breakpoint($value) {
+	@if $value == 'phone' {
+		@media only screen and (min-width: 120px) and (max-width: 767px) { @content; }
+	} @else if $value == 'tablet' {
+		@media only screen and (min-width: 768px) and (max-width: 1024px) { @content; }
+	} @else if $value == 'desktop' {
+		@media only screen and (min-width: 1025px) { @content; }
+	} @else {
+		@media only screen and (max-width: $value) { @content; }
+	}
+}
+
+
+@function pb($sirina, $visina) {
+    @return ($visina / $sirina) * 100%;
+}
+
+$items: black red orange;
+@each $item in $items {
+    .title-#{$item} {
+        color: $item;
+    }
+}
+
+@for $i from 1 through 20 {
+    .color-#{$i} {
+      background-color: lighten(#F00A00, $i * 2%);
+    }
+}
