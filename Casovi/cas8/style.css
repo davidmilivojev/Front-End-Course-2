@@ -6,3 +6,88 @@
     padding: 20px;
     max-width: 1200px;
 }
+
+
+/* accoridon */
+.accordion-item {
+    border: 1px solid #000;
+    padding: 20px;
+}
+
+.accordion-btn {
+    background-color: cadetblue;
+    width: 100%;
+    border: 0;
+    padding: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: left;
+}
+.accordion-content {
+    margin-top: 20px;
+    display: none;
+}
+
+.accordion-item--active .accordion-btn {
+    background-color: chartreuse;
+}
+
+/* tabs */
+.tabs {
+    margin-top: 50px;
+}
+.tab-controls {
+    font-size: 0;
+}
+.tab-btn {
+    border: 1px solid #000;
+    display: inline-block;
+    padding: 20px;
+    font-size: 20px;
+    background-color: #fff;
+}
+
+.tab-content {
+    border: 1px solid #000;
+    padding: 20px;
+    background-color: #fff;
+    display: none;
+}
+
+.tab-btn-active,
+.tab-content-active {
+    background-color: cornflowerblue;
+}
+
+.tab-content-active {
+    display: block;
+}
+
+.dropdown {
+    margin-top: 50px;
+    max-width: 300px;
+    position: relative;
+}
+
+.dropdown-btn {
+    border: 1px solid #000;
+    padding: 10px 20px;
+    background-color: #fff;
+    font-size: 20px;
+    width: 100%;
+}
+
+.dropdown-list {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+
+.dropdown-item {
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #000;
+}
