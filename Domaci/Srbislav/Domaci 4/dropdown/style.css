@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  padding: 20px;
+  background-color: rgb(59, 7, 7);
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding: 20px;
+}
+
+li:hover {
+  background-color: rgb(107, 63, 63);
+}
+
+.dropdown {
+  overflow: hidden;
+  margin: 30px;
+  background: rgb(175, 35, 35);
+  border: solid 2px black;
+  width: 300px;
+  cursor: pointer;
+}
+
+.dropdown.closed .menu {
+  height: 0px;
+}
