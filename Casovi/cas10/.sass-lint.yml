@@ -1,0 +1,8 @@
+options:
+  formatter: stylish
+  merge-default-rules: false
+files:
+  include: '**/*.s+(a|c)ss'
+rules:
+  # Disallows
+  no-ids: 1
