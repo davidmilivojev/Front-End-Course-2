@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.element {
+  padding: 10px;
+  background: rgb(8, 57, 90);
+  color: white;
+}
+.title {
+  cursor: pointer;
+}
+.inner {
+  background-color: brown;
+}
+.hideText {
+  display: none;
+}

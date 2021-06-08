@@ -1,0 +1,63 @@
+.image {
+    @extend %bg-img;
+    position: relative;
+    padding-bottom: 56%;
+}
+
+.footer-img {
+    @extend %bg-img;
+    position: relative;
+}
+
+.header {
+    @extend %clearfix;
+    position: relative;
+}
+
+.footer {
+    @extend %clearfix;
+}
+
+.test {
+    position: relative;
+    @include breakpoint(tablet) {
+        position: absolute;
+    }
+    @include breakpoint(phone) {
+        position: fixed;
+    }
+}
+
+.krug {
+    @include circle(200px) {
+        color: red;
+        position: relative;
+    }
+}
+
+.trougao {
+    width: 200px;
+    height: pb(1200, 800);
+}
+
+.title {
+    font-size: 160px;
+    color: #404040;
+}
+
+
+.banner {
+    &.banner-red {
+        position: relative;
+    }
+    .banner-g {
+        position: relative;
+    }
+    .loaded & & {
+        position: relative;
+        .test {
+            color: red;
+        }
+    }
+}
+
