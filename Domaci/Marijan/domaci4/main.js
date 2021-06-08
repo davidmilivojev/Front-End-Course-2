@@ -52,7 +52,6 @@ function dropdown() {
   dropItems.forEach(dropItem => {
     dropItem.addEventListener('click', () => {
       dropList.style.display = 'none';
-      console.log(dropButton)
       dropButton.innerHTML = dropItem.innerHTML
     })
   });
