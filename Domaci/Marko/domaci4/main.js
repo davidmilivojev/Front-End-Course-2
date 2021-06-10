@@ -17,6 +17,8 @@ elements.forEach(element => {
 //dropdown
 const dropdown = document.querySelector('.dropdown');
 const dropDownList = document.querySelector('.dropdown-list');
+const dropItems = document.querySelectorAll('.dropdown-item');
+const dropBtn = document.querySelector('.dropdown-btn');
 
 dropdown.addEventListener('click', (e) => {
   if (!dropDownList.classList.contains('dropdown-list--active')) {
@@ -24,6 +26,11 @@ dropdown.addEventListener('click', (e) => {
   } else {
     dropDownList.classList.remove('dropdown-list--active');
   }
+  dropItems.forEach(dropItem => {
+    dropItem.addEventListener('click', () => {
+      dropBtn.innerHTML = dropItem.innerHTML
+    })
+  });
 });
 
 //tabs
