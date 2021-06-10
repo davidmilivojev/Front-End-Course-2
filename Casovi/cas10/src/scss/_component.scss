@@ -9,3 +9,15 @@ p {
 #id {
     color: red;
 }
+
+div {
+    p {
+        color: 2;
+    }
+}
+
+span {
+    font-size: 150px;
+    display: block;
+    margin: 20px;
+}

@@ -6,3 +6,4 @@ files:
 rules:
   # Disallows
   no-ids: 1
+  nesting-depth: 3
